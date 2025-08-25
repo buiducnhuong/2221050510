@@ -1,0 +1,28 @@
+h3{
+    color: brown;
+}
+#title{
+    background-color: aqua;
+}
+.bg{
+    background-color: rgb(201, 194, 194);
+}
+p{
+    color: brown;
+    background-color: blue;
+}
+.box1{
+    background-color: aqua;
+}
+.box2{
+    background-color: brown;
+    /*truyen 1 gia tri cach xung quanh */
+    /*trai phai tren duoi */
+    margin:50px 30px 100px 10px;
+    width: 50%;
+    /*margin: auto , can giua */
+    margin: 50px auto;
+}
+.box3{
+    background-color: blueviolet;
+}
