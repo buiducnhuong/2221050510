@@ -1,0 +1,102 @@
+body{
+margin: 0;
+}
+header{
+    background-color: #131314;
+}
+.header-container{
+    display: flex;
+    background-color: black;
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+}
+ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 20px;
+}
+a{
+    font-weight: 500;
+    color: #9b9b9b;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "SFProDisplay", Arial, sans-serif;
+
+}
+a:hover{
+    color: orange;
+}
+.logo{
+    width: 15%;
+}
+.danhmuc{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding:10px 0;
+}
+.chucnang{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.muagoi{
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+.dangnhap{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+}
+main{
+    background-color: #131314;
+    color: white;
+    height: 1000px;
+    width: 100%;
+}
+.quangcao{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 70%;
+    background-color: black;
+    height: 1000px;
+    margin: auto;
+}
+.danhsach{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+}
+.qc {
+    margin-top: 10px;
+    width: 98%;
+    border-radius: 10px;
+}
+
+.tentheloai {
+    margin: 20px;
+}
+
+.danhsach {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.phim {
+    width: 19%;
+}
+
+.phim img {
+    width: 100%;
+}
