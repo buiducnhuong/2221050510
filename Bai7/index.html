@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai javascript</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        document.writeln("hello world! <br>");
+        //de khai bao bien js dung let hoac var
+        //cu phap: let ten bien = gia tri
+        // de noi chuoi js dung dau +
+
+        //let hoTen ="bui duc nhuong <br>";
+
+        //document.writeln(hoTen);
+
+        //let soThunhat = 10;
+        //let soThuhai = 5;
+        //let ketQua = true;
+        //phep cong +
+        //phep tru -
+        //phep chia /
+        //phep nhan *
+
+        //ketQua = soThunhat * soThuhai;
+        //ketQua = soThunhat +=soThuhai;
+        //ketQua = soThunhat %= soThuhai;
+        //ketQua = soThunhat - soThuhai;
+        //ketQua = soThunhat / soThuhai;
+        //document.writeln(ketQua);
+        //document.writeln(soThunhat == soThuhai);
+        //document.writeln(soThunhat != soThuhai);
+        //document.writeln(soThunhat !== soThuhai);
+        //document.writeln(soThunhat < soThuhai);
+
+        let thongTinsinhvien = {
+            hoTen : "bui duc nhuong",
+            mssv : "2221050510",
+            gioitinnh: true,
+            tuoi:21,
+            lop:"dh mo dia chat k67 "
+        }
+
+        let diachinhabannhuong = {
+            thanhPho: "ninhbinh",
+            phuong:"yenson",
+            duong:"tamdiep",
+            nha:"langca"
+        }
+
+        thongTinsinhvien.diachi = diachinhabannhuong;
+
+        document.writeln("xin chao ban:"+thongTinsinhvien.hoTen+" "+
+            thongTinsinhvien.tuoi+"tuoi"+" "+ diachinhabannhuong.phuong+" "+
+            diachinhabannhuong.thanhPho
+        );
+
+        let namNay = 2025;
+        document.writeln("ban"+thongTinsinhvien.hoTen+"sinh nam"+
+            (namNay - thongTinsinhvien.tuoi)
+        );
+
+    </script>
+    
+</body>
+</html>
