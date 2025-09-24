@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap js</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        let thongTinDonHang = {
+            maDonHang: "12345678",
+            thongTinKhachHang: {
+                hoTen: "MinhHieu",
+                soDienThoai: "0987654321",
+                trangThaiThanhVienThanThiet: false,
+            },
+            danhSachSanPham: {
+                sp01: {
+                    maSanPham: "1",
+                    tenSanPham: "Matcha",
+                    soLuong: 10,
+                    giaTien: "10000",
+                },
+                sp02: {
+                    maSanPham: "2",
+                    tenSanPham: "Cà phê",
+                    soLuong: 10,
+                    giaTien: "20000",
+                },
+                sp03: {
+                    maSanPham: "3",
+                    tenSanPham: "Trà sữa",
+                    soLuong: 15,
+                    giaTien: "20000",
+                }
+            },
+            thanhToanThanhCong: true,
+            diaChiGiaoHang: "Đông Ngạc"
+        }
+        let tongSP1 = thongTinDonHang.danhSachSanPham.sp01.giaTien * thongTinDonHang.danhSachSanPham.sp01.soLuong;
+        let tongSP2 = thongTinDonHang.danhSachSanPham.sp02.giaTien * thongTinDonHang.danhSachSanPham.sp02.soLuong;
+        let tongSP3 = thongTinDonHang.danhSachSanPham.sp03.giaTien * thongTinDonHang.danhSachSanPham.sp03.soLuong;
+
+        let tongTien = tongSP1 + tongSP2 + tongSP3;
+
+        //document.writeln("do dai cua ma don hang  = " + thongTinDonHang.maDonHang.length);
+
+        var myString = "hello";
+        //document.writeln(myString.slice(1,4));
+        //document.writeln(myString.replace("hello","hi"));
+        //document.writeln(myString.toLowerCase());
+        //document.writeln(myString.indexOf('e'));
+        //document.writeln(myString.includes('e'));
+        //document.writeln(myString.split('l'));
+
+        //let danhSach = ["bui duc nhuong","nguyen van a ","tran thi b","nguyen thi c"];
+        //document.writeln(danhSach[1].startswith("nguyen"));
+
+        //chuyen chuoi ve so 
+        //let so = "123";
+        //document.writeln(typeof(so));
+        //document.writeln(typeof(Number(so)));
+        //document.writeln(so.isNaN());
+
+        let toDay = new Date();
+
+        document.writeln(toDay);
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
