@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính chỉ số BMI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 15px;
+            width: 350px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        button {
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e68900;
+        }
+        img {
+            width: 150px;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+        .result {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .warning {
+            color: #ffcccb;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>TÍNH CHỈ SỐ BMI</h2>
+        <label>Nhập cân nặng (kg):</label><br>
+        <input type="number" id="weight" placeholder="Ví dụ: 60"><br>
+        <label>Nhập chiều cao (m):</label><br>
+        <input type="number" id="height" placeholder="Ví dụ: 1.65" step="0.01"><br>
+        <button onclick="tinhBMI()">Kiểm tra BMI</button>
+
+        <div class="result" id="result"></div>
+        <div id="image"></div>
+    </div>
+
+    <script>
+        function tinhBMI() {
+            const weight = parseFloat(document.getElementById("weight").value);
+            const height = parseFloat(document.getElementById("height").value);
+            const resultDiv = document.getElementById("result");
+            const imageDiv = document.getElementById("image");
+
+            imageDiv.innerHTML = "";
+            resultDiv.innerHTML = "";
+
+            if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                resultDiv.innerHTML = "<span class='warning'> Vui lòng nhập đúng cân nặng và chiều cao!</span>";
+                return;
+            }
+
+            const bmi = (weight / (height * height)).toFixed(2);
+            let message = "";
+            let imgSrc = "";
+
+            if (bmi < 18.5) {
+                message = `BMI: ${bmi} → Thiếu cân`;
+                imgSrc = "image/thieu.png";
+            } else if (bmi < 25) {
+                message = `BMI: ${bmi} → Bình thường`;
+                imgSrc = "image/binhthuong.png";
+            } else if (bmi < 30) {
+                message = `BMI: ${bmi} → Thừa cân`;
+                imgSrc = "image/thua.png";
+            } else if (bmi < 40) {
+                message = `BMI: ${bmi} → Béo phì mức độ 1, 2`;
+                imgSrc = "image/beocapdo1.png";
+            } else {
+                message = `BMI: ${bmi} → Béo phì nặng`;
+                imgSrc = "image/beonang.png";
+            }
+
+            resultDiv.innerHTML = message;
+            imageDiv.innerHTML = `<img src="${imgSrc}" alt="BMI Image">`;
+        }
+    </script>
+
+</body>
+</html>

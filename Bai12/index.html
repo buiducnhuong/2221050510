@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+        <h2>vd ve che do </h2>
+        <div class="anh">
+            <img src="image/hinh-anh-mat-troi-toa-nang_105126695.jpg" alt="" width="200px">
+        </div>
+        <h2>che do sang</h2>
+        <button onclick="doiChedo()">doi che do </button>
+    </div>
+    <script>
+        let cheDo = true;
+        function doiChedo(){
+            if(cheDo == true){
+                document.getElementsByTagName('body')[0].style=' background-color : black';
+            document.getElementsByTagName('h2')[1].innerHTML = 'che do sang';
+            document.getElementsByTagName('h2')[0].style = 'color : white';
+            document.getElementsByTagName('h2')[1].style = 'color : white';
+            document.getElementsByTagName('img')[0].src = 'image/anh mat trang.webp';
+            cheDo = false;
+
+            }
+            else{
+                document.getElementsByTagName('body')[0].style=' background-color : white';
+            document.getElementsByTagName('h2')[1].innerHTML = 'che do toi';
+            document.getElementsByTagName('h2')[0].style = 'color : black';
+            document.getElementsByTagName('h2')[1].style = 'color : black';
+            document.getElementsByTagName('img')[0].src = 'image/hinh-anh-mat-troi-toa-nang_105126695.jpg';
+            cheDo = false;
+            }  
+        }
+    </script>
+    
+</body>
+</html>
