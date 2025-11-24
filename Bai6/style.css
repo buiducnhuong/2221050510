@@ -2,7 +2,7 @@ body{
 margin: 0;
 }
 header{
-    background-color: #131314;
+    background-color: black;
 }
 .header-container{
     display: flex;
@@ -18,12 +18,11 @@ ul{
     gap: 20px;
 }
 a{
-    font-weight: 500;
+   font-weight: 500;
     color: #9b9b9b;
     font-size: 16px;
     text-decoration: none;
     font-family: "SFProDisplay", Arial, sans-serif;
-
 }
 a:hover{
     color: orange;
@@ -34,8 +33,9 @@ a:hover{
 .danhmuc{
     display: flex;
     align-items: center;
+    padding: 0;
     gap: 20px;
-    padding:10px 0;
+
 }
 .chucnang{
     display: flex;
@@ -46,57 +46,91 @@ a:hover{
     background-color: orange;
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 20px ;
     width: 100px;
     border-radius: 10px;
 }
 .dangnhap{
-    background-color: black;
-    color: white;
-    border: none;
-    width: 100px;
-}
-main{
     background-color: #131314;
     color: white;
-    height: 1000px;
+    width: 100px;
+}
+
+main{
+  background-color: #1f1f20;
+    color: white;
     width: 100%;
+    /* height: 3000px; */
 }
 .quangcao{
     display: flex;
     justify-content: center;
 }
+.quangcao img{
+    width: 70%;
+}
 .container{
     width: 70%;
     background-color: black;
-    height: 1000px;
+    /* height: 1000px; */
     margin: auto;
-}
-.danhsach{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: auto;
-}
-.qc {
     margin-top: 10px;
-    width: 98%;
+    border-radius: 10px 10px 0 0;
+}
+.banner{
+    width: 100%;
+}
+.qc{
+    width: 100%;
     border-radius: 10px;
+    margin-top: 10px;
 }
-
 .tentheloai {
-    margin: 20px;
+    margin: 15px;
+    font-size: 35px;
 }
-
 .danhsach {
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
 }
-
 .phim {
     width: 19%;
 }
-
 .phim img {
     width: 100%;
+}
+.anh img{
+    width: 100%;
+    height: 250px;
+}
+.ten{
+    margin-top: 10px;
+}
+.theloai{
+    margin-top: 30px;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid rgba(249, 244, 244, 0.5);
+    margin: 80px 0 20px 0;
+}
+.thongtinlienlac{
+    display: flex;
+}
+.thongtin-logo img{
+    width: 150px;
+    height: 40px;
+}
+.ul-word{
+    list-style: none;
+    display: block;
+    margin-left: 70px;
+}
+li{
+     margin-bottom: 10px;
+}
+.duoi{
+    margin-top: 25px;
 }
